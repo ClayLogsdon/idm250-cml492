@@ -13,6 +13,16 @@
 
 
 <div class="header-banner">
+
+<div class="header-image-1">
+<?php
+// check if the post or page has a Featured Image assigned to it.
+if (has_post_thumbnail()) {
+    the_post_thumbnail();
+}
+?>
+
+
         <h1>Bookish</h1>
     </div>
     <div class="clear"></div>
