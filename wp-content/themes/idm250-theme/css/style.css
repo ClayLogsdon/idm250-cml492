@@ -1,0 +1,247 @@
+@font-face {
+  font-family: Road Rage;
+  src: url(../font/road_rage/RoadRage-Regular.ttf);
+}
+@font-face {
+  font-family: Inter;
+  src: url(../font/Inter/static/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: Irish Grover;
+  src: url(../font/Irish_Grover/IrishGrover-Regular.ttf);
+}
+@font-face {
+  font-family: Merriweather;
+  src: url(../font/Merriweather/Merriweather-Regular.ttf);
+}
+body {
+    font-family: "Road Rage";
+    font-weight: normal;
+    font-style: normal;
+    color:#474747;
+}
+.hero
+{
+	background-image:url(../img/image1.png);
+	background-size:cover;
+	background-position:50% 10%;
+	background-repeat:no-repeat;
+	height:calc(50vh);
+	
+	color:#F9F9F9;
+	
+	
+}
+.my-tab
+{
+	border: none !important;
+
+}
+.my-tab a
+{
+	font-family: 'Merriweather';
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 38px;
+/* identical to box height */
+
+
+color: #474747;
+
+}
+.recent
+{
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 45px;
+/* identical to box height, or 205% */
+
+
+color: #474747;
+
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+{
+	border-color: transparent !important;
+}
+.my-tab a.active
+{
+	font-weight: 700;
+}
+.text-right
+{
+	text-align:right !important;
+}
+.text-gold
+{
+	color:#FFEB0F;
+}
+.text-blue
+{
+	color:#4EB4F0;
+}
+
+.navbar {
+  
+	background: linear-gradient(0deg, rgba(72, 82, 233, 0.4), rgba(72, 82, 233, 0.4)), #4D4E6A;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.f-right {
+    float: right;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar-nav li a.nav-link
+{
+    color: #FFFFFF !important;
+    font-size: 14px;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    font-weight: bold;
+}
+
+.navbar-nav li a.nav-link.active
+{
+    color: #01B2F0 !important;
+}
+
+.navbar a i
+{
+    color: #858585;
+    padding-right: 10px;
+}
+
+.navbar-brand
+{
+    margin-left: 50px !important;
+	top:10px;
+	background: #FFFFFF;
+border-radius: 45px;
+width: 250px;
+}
+
+.hero-banner-text
+{
+    padding-top:15vh;
+}
+
+.hero-banner-text h2
+{
+	font-family:"Road Rage";
+   font-size: 140px;
+	line-height: 154px;
+	font-style: normal;
+	font-weight: 400;
+	
+}
+
+.heading-text
+{
+   font-family: 'Road Rage';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 70px;
+
+color: #474747;
+
+}
+.heading-text2
+{
+	 font-family: 'Road Rage';
+font-style: normal;
+font-weight: 400;
+font-size: 52px;
+line-height: 70px;
+
+color: #474747;
+}
+.inner-head
+{
+font-family: 'Merriweather';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 38px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.left-p
+{
+
+background-image:url(../img/image3.png);
+	background-size:cover;
+	background-position:0 100%;
+	background-repeat:no-repeat;
+	width: 56px;
+	height: 56px;
+padding:40px
+}
+.right-p
+{
+	background:url(../img/image3.png);
+	background-size:cover;
+	background-position:0 100%;
+	background-repeat:no-repeat;
+	width: 56px;
+	height: 56px;
+padding:40px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.recommend li
+{
+	list-style:disc !important;
+}
+.hcenter
+{
+    text-align: center;
+}
+
+.footer-bottom
+{
+	background: linear-gradient(0deg, rgba(72, 82, 233, 0.4), rgba(72, 82, 233, 0.4)), #4D4E6A;
+	
+}
+.footer-bottom a
+{
+	font-family: 'Irish Grover';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+
+color: #FFFFFF;
+text-decoration:none;
+}
+.copyright a
+{
+	font-size: 38px;
+line-height: 46px;
+}
+@media screen and (max-width: 992px)
+{
+  
+  
+}
+
+@media screen and (max-width: 540px)
+{
+    .solution-container
+    {
+        width: calc(100% - 30px) !important;
+    }
+}
+

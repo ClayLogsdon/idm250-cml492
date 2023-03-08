@@ -1,33 +1,21 @@
-<br><br><br><br><br><br>
-
-
-<footer>
-  <div id="footer">
-    <div class="footer2">
-<?php wp_nav_menu(['theme_location' => 'footer-menu']); ?>
-<div class ="icons">
-
-</div></div>
-
-
-<div class="footer-links">
-<p>About</p>
-<p>FAQ</p>
-<p>Sitemap</p>
-</div>
-
-<br>
-<p class="copyright"> Copyright&copy; <?php echo date('Y'); ?> 
-<?php bloginfo('name'); ?> - @2023 Bookish WordPress Theme by Clay Logsdon</p>
-<br></div>
-
-<?php // social media icons will go here?>
-
-
-  </footer>
-<?php // https://developer.wordpress.org/reference/functions/wp_footer/?>
-<?php wp_footer(); ?>
-
-
+<footer id="footer" class="text-white">
+	
+	<div class="footer-bottom " style="background-color: #213455">
+		<div class="container d-md-flex py-4">
+		<div class="col-12 me-md-auto text-center text-md-start">
+			<div class="footer-menu text-capitalize text-white text-center">
+				
+				<span ><a href="" class="p-5">About</a></span>
+				<span ><a href="" class="p-5">FAQ</a></span>
+				<span><a href="" class="p-5">Sitemap</a></span>
+			</div>
+			<div class="copyright text-center mt-5"><a class="text-decoration-none " href="">@ 2023 Bookish WordPress Theme by Clay</a></div>
+		
+		</div>
+		
+		 </div>
+	 </div>
+ </footer>
+ <?php wp_footer(); ?>
 </body>
 </html>
