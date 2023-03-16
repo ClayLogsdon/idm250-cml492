@@ -24,29 +24,28 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 @font-face {
     font-family: Road Rage;
-    src: url(/wp-content/themes/idm250-theme/font/road_rage/RoadRage-Regular.ttf);
+    src: url(/idm250/wp-content/themes/idm250-theme/font/road_rage/RoadRage-Regular.ttf);
   }
   @font-face {
     font-family: Inter;
-    src: url(/wp-content/themes/idm250-theme/font/Inter/static/Inter-Regular.ttf);
+    src: url(/idm250/wp-content/themes/idm250-theme/font/Inter/static/Inter-Regular.ttf);
   }
   @font-face {
     font-family: Irish Grover;
-    src: url(/wp-content/themes/idm250-theme/font/Irish_Grover/IrishGrover-Regular.ttf);
+    src: url(/idm250/wp-content/themes/idm250-theme/font/Irish_Grover/IrishGrover-Regular.ttf);
   }
   @font-face {
     font-family: Merriweather;
-    src: url(/wp-content/themes/idm250-theme/font/Merriweather/Merriweather-Regular.ttf);
+    src: url(/idm250/wp-content/themes/idm250-theme/font/Merriweather/Merriweather-Regular.ttf);
   }
   body {
-      font-family: "Road Rage";
       font-weight: normal;
       font-style: normal;
       color:#474747;
   }
   .hero
   {
-      background-image:url(../img/image1.png);
+      background-image:url(/idm250/wp-content/themes/idm250-theme/img/image1.png);
       background-size:cover;
       background-position:50% 10%;
       background-repeat:no-repeat;
@@ -74,7 +73,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   color: #474747;
   
   }
-  
   
   .prev
   {
@@ -228,7 +226,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
   .right-p
   {
-      background:url(../img/image3.png);
+      background:url(../img/quote2.png);
       background-size:cover;
       background-position:0 100%;
       background-repeat:no-repeat;
@@ -289,4 +287,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
       }
   }
   
+  .navbar li a.nav-link
+{
+font-family:sans-serif
+}
   

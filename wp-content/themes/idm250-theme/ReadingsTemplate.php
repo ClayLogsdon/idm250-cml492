@@ -17,13 +17,13 @@
 			<div class="row">
 			<div class="col-lg-3 col-md-6 mb-3">
 				<div class="box">
-			  <a href="view-readings.php"><img src="/idm250/wp-content/themes/idm250-theme/img/image13.png" class="col-12"></a>
+			  <a href="https://clayfarah.com/idm250/viewing-readings/"><img src="/idm250/wp-content/themes/idm250-theme/img/image13.png" class="col-12"></a>
 			 
 			  </div>
 			</div>
 			<div class="col-lg-3 col-md-6 mb-3">
 				<div class="box">
-			  <img src="/idm250/wp-content/themes/idm250-theme/img/image14.png" class="col-12">
+ <img src="/idm250/wp-content/themes/idm250-theme/img/image14.png" class="col-12">
 			  
 			  </div>
 			</div>

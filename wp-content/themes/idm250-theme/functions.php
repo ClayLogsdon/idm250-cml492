@@ -138,7 +138,7 @@ add_action( 'widgets_init', 'idm250_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function idm250_theme_scripts() {
-	wp_enqueue_style( 'idm250-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
+	//wp_enqueue_style( 'idm250-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'idm250-theme-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'idm250-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
@@ -175,4 +175,28 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+function create_posttype() {
+  
+    register_post_type( 'viewing',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'viewing' ),
+                'singular_name' => __( 'viewing' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'viewing'),
+            'show_in_rest' => true, 
+            'taxonomies'          => array( 'category' ),
+  
+  'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+  
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+
 

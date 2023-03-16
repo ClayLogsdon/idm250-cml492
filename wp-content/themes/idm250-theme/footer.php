@@ -9,7 +9,7 @@
 				<span ><a href="" class="p-5">FAQ</a></span>
 				<span><a href="" class="p-5">Sitemap</a></span>
 			</div>
-			<div class="copyright text-center mt-5"><a class="text-decoration-none " href="">@ 2023 Bookish WordPress Theme by Clay</a></div>
+			<div class="copyright text-center mt-5"><a class="text-decoration-none " href="">@2023 Bookish WordPress Theme by Clay</a></div>
 		
 		</div>
 		

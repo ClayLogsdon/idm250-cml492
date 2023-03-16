@@ -7,20 +7,8 @@
 	<div class="container">
 		
 		<div class="position-relative">
-		<button class="prev pr border-round position-absolute btn btn-primary"><i class="bi bi-arrow-left"></i></button>
-		<div class="testi-slide">
-			<div class="testimonial text-center">
-				
-				<center><img src="/idm250/wp-content/themes/idm250-theme/img/image15.png"/></center>
-				<div class="progress mt-5 col-6 m-auto">
-				  <div class="progress-bar w-75 " role="progressbar" width="500" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">65%</div>
-				</div>
-				<div class=" mt-3 col-6 m-auto" border="2">
-				   <span class="px-2 py-2" >312</span>
-				   <span class="bg-dark text-white align-center px-2 py-2">480</span><br/>
-				   <br/>
-				   <label class="text-muted"><strong>Pages</strong></label>
-				</div>
+
+
 			</div>
 			<div class="testimonial text-center">
 				
