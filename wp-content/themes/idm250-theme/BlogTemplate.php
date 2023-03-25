@@ -7,38 +7,78 @@
 <div class="container  pb-3 pt-3">
 	<div class="row">
 		<div class="col-md-9">
-			<h3 class="heading-text">Journal Entry #1</h3>
-			<p class="justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-			<img src="/idm250/wp-content/themes/idm250-theme/img/image2.png" width="100%"/>
-			<label class="text-muted col-12 text-center">Socrates - @LinkedMedia</label>
-			<p class="mt-3">Additional reasons facts regarding Lorum Ipsum can be found below:</p>
-<ul class="recommend">
-		<li>One</li>
-		<li>Two</li>
-		<li>Three</li>
-		<li>Four</li>
-	</ul>
-			<p class="text-center mt-5"><span class="left-p">&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;And if life is repeated a thousand times, still you, you, and again, you...&nbsp;&nbsp;&nbsp;<span class="right-p">&nbsp;&nbsp;&nbsp;</span>
-	
+		    
+		    <?php
+		    $recent_args = array(
+    "posts_per_page" => 1,
+    "orderby"        => "date",
+    "order"          => "DESC"
+);      
+
+$recent_posts = new WP_Query( $recent_args );
+
+if ( $recent_posts -> have_posts() ) :
+    while ( $recent_posts -> have_posts() ) :
+
+    $recent_posts -> the_post();
+?>
+   <h3 class="heading-text"> <?php the_title(); ?></h3>
+<?php
+    $content_post = get_post();
+$content = $content_post->post_content;
+$content = apply_filters('the_content', $content);
+$content = str_replace(']]>', ']]&gt;', $content);
+?>
+	<p class="justify"> <?php echo $content; ?></p>
+<?php
+    endwhile;
+endif;
+		 ?>   
+		
+		
+		
+
 	</p>
+	
+	
+	
 	<h3 class="mt-5">Enjoy a Live Reading</h3>
 	<p class="text-center mt-5">
-		<img src="/idm250/wp-content/themes/idm250-theme/img/image5.png" class="col-8"/>
+
+<iframe width="700" height="505" class="col-8" src="https://www.youtube.com/embed/LeUm07WtTvE" title="Billy Collins on Reading Poetry Aloud" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
 	</p>
 	</div>
+	
 		<div class="col-md-3">
 			<h3 class="text-uppercase mt-5 px-4 recent">recent posts</h3>
 			<ul class="mb-5">
-				<li>The Missing Ragdoll</li>
-				<li>The Who of Blue</li>
-				<li>A Cat at the Quagmire</li>
-				<li>Bearing Fangs</li>
-				<li>A Rendezvous at Rima’s</li>
+			    <?php
+			    $args = array(
+'post_type'=> 'post',
+'orderby'    => 'ID',
+'post_status' => 'publish',
+'order'    => 'DESC',
+'posts_per_page' => -1 // this will retrive all the post that is published 
+);
+$result = new WP_Query( $args );
+if ( $result-> have_posts() ) : ?>
+<?php while ( $result->have_posts() ) : $result->the_post(); ?>
+<li><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?>   			</a></li>    
+<?php endwhile; ?>
+<?php endif; wp_reset_postdata(); ?>
+
 			</ul>
 			
 			<h3 class="text-uppercase mt-5 px-4 recent">CATEGORIES</h3>
 			<ul class="mb-5">
-				<li>Sci-fi (42)</li>
+				<li>Sci-fi (18)</li>
+				<li>Fantasy (13)</li>
+				<li>Mystery (10)</li>
+				<li>Thriller (7)</li>
+				<li>Action (4)</li>
+				<li>Romance (2)</li>
 				
 			</ul>
 		</div>

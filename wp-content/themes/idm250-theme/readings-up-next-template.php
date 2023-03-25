@@ -1,4 +1,4 @@
-<?php /* Template Name: ReadingsTemplate */ ?>
+<?php /* Template Name: ReadingsUpNextTemplate */ ?>
 
 
 <?php set_query_var('pagehead', "Readings"); ?>
@@ -17,7 +17,7 @@
 			<div class="row">
 			    
 			       <?php
-    $args = array( 'category__and' => array(9, 6), 'numberposts' => 4, 'post_type' =>  'viewing' ); 
+    $args = array( 'category__and' => array(9, 8), 'numberposts' => 4, 'post_type' =>  'viewing' ); 
     $postslist = get_posts( $args );    
     foreach ($postslist as $post) :  setup_postdata($post); 
     ?>  
@@ -41,7 +41,7 @@
 			<div class="row">
 			    
 			       <?php
-    $args = array( 'category__and' => array(2, 6), 'numberposts' => 4, 'post_type' =>  'viewing' ); 
+    $args = array( 'category__and' => array(2, 8), 'numberposts' => 4, 'post_type' =>  'viewing' ); 
     $postslist = get_posts( $args );    
     foreach ($postslist as $post) :  setup_postdata($post); 
     ?>  
@@ -65,7 +65,7 @@
 			<div class="row">
 			    
 			       <?php
-    $args = array( 'category__and' => array(3, 6), 'numberposts' => 4, 'post_type' =>  'viewing' ); 
+    $args = array( 'category__and' => array(3, 8), 'numberposts' => 4, 'post_type' =>  'viewing' ); 
     $postslist = get_posts( $args );    
     foreach ($postslist as $post) :  setup_postdata($post); 
     ?>  
@@ -89,7 +89,7 @@
 			<div class="row">
 			    
 			       <?php
-    $args = array( 'category__and' => array(4, 6), 'numberposts' => 4, 'post_type' =>  'viewing' ); 
+    $args = array( 'category__and' => array(4, 8), 'numberposts' => 4, 'post_type' =>  'viewing' ); 
     $postslist = get_posts( $args );    
     foreach ($postslist as $post) :  setup_postdata($post); 
     ?>  
@@ -109,11 +109,12 @@
     
     <?php endforeach; ?>
     	</div>
+    
         		<h3 class="inner-head">Screenplays, Play Scripts & Librettos</h3>
 			<div class="row">
 			    
 			       <?php
-    $args = array( 'category__and' => array(5, 6), 'numberposts' => 4, 'post_type' =>  'viewing' ); 
+    $args = array( 'category__and' => array(5, 8), 'numberposts' => 4, 'post_type' =>  'viewing' ); 
     $postslist = get_posts( $args );    
     foreach ($postslist as $post) :  setup_postdata($post); 
     ?>  
@@ -132,7 +133,7 @@
     
     
     <?php endforeach; ?>
-			    	</div>
+			</div>	    
 	
 
 
@@ -141,7 +142,7 @@
 		</div>
 	</div>
   </div>
-  
+  </div>
   
 </div>
 

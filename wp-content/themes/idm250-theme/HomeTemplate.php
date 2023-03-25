@@ -27,7 +27,7 @@
     </a>
 
     
-    <?php the_excerpt(); ?>  
+    
     <?php endforeach; ?>
       
 
@@ -60,7 +60,6 @@
     </a>
 
     
-    <?php the_excerpt(); ?>  
     <?php endforeach; ?>
           
     
@@ -81,9 +80,11 @@
 </div>
 <div class="col-12">
 <div class="container  pb-3 pt-3">
-	<h3 class="heading-text2">Live Readings</h3>
+	<h3 class="heading-text2">Enjoy a Live Reading</h3>
 	<p class="text-center">
-		<img src="./wp-content/themes/idm250-theme/img/image5.png" class="col-8"/>
+	
+<iframe width="700" height="505" class="col-8" src="https://www.youtube.com/embed/LeUm07WtTvE" title="Billy Collins on Reading Poetry Aloud" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 	</p>
 </div>
 </div>

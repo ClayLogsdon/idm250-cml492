@@ -1,6 +1,6 @@
 <?php /* Template Name: ViewingReadingsTemplate */ ?>
 
-<?php set_query_var('pagehead', "Viewing Readings"); ?>
+<?php set_query_var('pagehead', "Viewing Reading"); ?>
 <?php get_header(); ?>
 
 <div class="col-12 mt-3 text-center py-5">
